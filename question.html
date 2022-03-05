@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>HKWTCHAT</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./../css/main.css" />
+    <link rel="icon" href="favicon.png" />
+  </head>
+  <body>
+    <h1 class="h1-center">新しいRoomを作成</h1>
+    <form class="form">
+      <input type="text" value="" class="name" placeholder="題名" />
+      <textarea class="message" placeholder="質問はここへ"></textarea>
+      <input type="button" value="送信" class="sendbtn" onclick="send()" />
+    </form>
+  </body>
+</html>

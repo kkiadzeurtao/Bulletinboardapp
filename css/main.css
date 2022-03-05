@@ -1,0 +1,251 @@
+.title {
+  margin: 0;
+  padding: 0 10px;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+header {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  background-color: rgba(255, 255, 255, 0.1); /* 背景色 */
+  border: 1px solid rgba(255, 255, 255, 0.4); /* ボーダー */
+  border-right-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(20px); /* ぼかしエフェクト */
+  backdrop-filter: blur(20px);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5); /* 薄い影 */
+}
+header a {
+  text-decoration: none;
+  color: #4b4b4b;
+}
+header ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+}
+header ul li {
+  margin: 0 0 0 15px;
+  font-size: 14px;
+}
+header nav {
+  margin: 0 0 0 auto;
+  margin-right: 30px;
+}
+footer {
+  width: 100%;
+  margin-top: 20px;
+  padding: 30px 0;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+body {
+  margin-top: 70px;
+  background-color: rgb(255, 255, 255);
+}
+.form {
+  padding: 10px; /* 余白指定 */
+  border: 1px solid;
+  border-radius: 10px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.name {
+  height: 2.4em;
+  width: 100%;
+  padding: 0 16px;
+  border-radius: 4px;
+  margin-top: 5px;
+  border: none;
+  box-shadow: 0 0 0 1px #ccc inset;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  box-sizing: border-box;
+}
+
+.name:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px rgb(33, 150, 243) inset;
+}
+
+.message textarea {
+  height: 300px;
+}
+
+.message {
+  display: block;
+  width: 100%;
+  padding: 4px 16px;
+  border-radius: 4px;
+  margin-top: 5px;
+  border: none;
+  box-shadow: 0 0 0 1px #ccc inset;
+  appearance: none;
+  resize: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  box-sizing: border-box;
+}
+
+.message:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px rgb(33, 150, 243) inset;
+}
+.sendbtn {
+  width: -moz-fit-content; /* Firefox */
+  width: fit-content;
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.sendbtn:hover {
+  background-color: #000;
+}
+
+.sendbtn:focus {
+  outline: 0;
+  background-color: #000;
+  border: 2px solid rgb(33, 150, 243);
+}
+.text_main {
+  position: center;
+  text-align: center;
+}
+
+.article-list {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 768px) .article-list li {
+  width: 100%;
+}
+.article-list li {
+  width: 48%;
+  margin: 0 0 20px 0;
+}
+.article-list li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  text-decoration: none;
+  box-shadow: 0 0 5px #ccc;
+  transition: all 0.5s;
+}
+/*
+.img-block {
+  width: 5%;
+}
+*/
+figure {
+  display: block;
+}
+section {
+  display: block;
+}
+.content-block {
+  width: 91%;
+}
+.day {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0 0 10px 0;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.content-block h2 {
+  color: black;
+}
+
+.navigation a {
+  visibility: hidden;
+}
+
+/*ローディングが表示されるエリアの設定*/
+#infscr-loading {
+  width: 100%;
+  text-align: center;
+  margin: 20px auto;
+}
+#infscr-loading img {
+  width: 30px; /*ローディング画像のサイズ*/
+}
+.img-block {
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  padding-right: 20px;
+}
+.img-block img {
+  border: 3px solid;
+  padding: 3px;
+  border-color: rgb(180, 180, 180);
+  border-radius: 50%;
+  /* 角丸の半径を50%に*/
+  width: 130px;
+  /* 縦横を同じにする */
+  height: 130px;
+  /* 縦横を同じにする */
+  object-fit: cover;
+  /*画像の縦横比を保ったまま領域をカバー */
+  object-position: left top;
+  /*画像の横の位置　縦の位置 */
+}
+
+/*全て共通：hideエリアをはじめは非表示*/
+.hide-area {
+  display: none;
+}
+
+/*全て共通：モーダルのボタンの色を変更したい場合*/
+.modaal-close:after,
+.modaal-close:before {
+  background: #ccc;
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before {
+  background: #666;
+}
+.h1-center {
+  text-align: center;
+}
+.material-icons-outlined {
+  position: fixed;
+  right: 60px;
+  bottom: 60px;
+  transform: scale(4, 4);
+  color: blue;
+}
